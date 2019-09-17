@@ -11,6 +11,8 @@ public:
 	//setters
 	void asetaAika(int tt, int mm, int ss);
 	void tulostaAika();
+	void kysyAika();
+	void lisaaSekunti();
 
 private:
 
