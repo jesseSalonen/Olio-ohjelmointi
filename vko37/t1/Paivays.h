@@ -2,6 +2,10 @@
 
 class Paivays {
 public:
+	Paivays(); //oletusrakentaja
+	Paivays(int pp, int kk, int vv); //param. rakentaja
+	~Paivays();  //purkaja
+
 
 	// getters
 	int annaPaiva();
