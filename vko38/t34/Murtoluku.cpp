@@ -49,10 +49,18 @@ void Murtoluku::kysyTiedot()
 
 void Murtoluku::sievenna()
 {
-	// kotiin euclidean algorithm implementations ensimmäinen, mod=jakojäännös, ':' voi unohtaa.
+	int SYT = Murtoluku::SYT(os_, nim_);
+	os_ = os_ / SYT;
+	nim_ = nim_ / SYT;
 }
 
-int Murtoluku::SYT()
+int Murtoluku::SYT(int os, int nim)
 {
-	return 0;
+	int t = 0;
+	while (nim != 0) {
+		t = nim;
+		nim = os % nim;
+		os = t;
+	}
+	return os;
 }

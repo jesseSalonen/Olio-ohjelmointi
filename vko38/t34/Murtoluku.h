@@ -17,7 +17,7 @@ public:
 	void sievenna();
 
 private:
-	int SYT();
+	int SYT(int os, int nim);
 	int os_;
 	int nim_;
 };
