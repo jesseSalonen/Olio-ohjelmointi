@@ -5,18 +5,14 @@ using std::endl; using std::cout;
 int main() {
 
 	Kello aika;
-	Kello syoteAika;
+	Kello aika1(23, 15, 44);
+	
+	aika.tulostaAika();
+	aika1.tulostaAika();
 
 	aika.asetaAika(14, 49, 12);
 	aika.tulostaAika();
 	
-	syoteAika.kysyAika();
-	syoteAika.tulostaAika();
-
-	cout << "Lisataan sekunti..." << endl;
-	syoteAika.lisaaSekunti();
-
-	syoteAika.tulostaAika();
 
 	return 0;
 }

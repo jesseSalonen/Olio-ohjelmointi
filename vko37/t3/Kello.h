@@ -2,6 +2,9 @@
 
 class Kello {
 public:
+	Kello();
+	Kello(int tt, int mm, int ss);
+	~Kello();
 
 	//getters
 	int annaTunnit();

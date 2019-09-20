@@ -3,6 +3,21 @@
 
 using std::cout; using std::cin; using std::endl;
 
+Kello::Kello(): tt_(12), mm_(0), ss_(0)
+{
+	cout << "Kello: oletusrakentaja " << this << endl;
+}
+
+Kello::Kello(int tt, int mm, int ss): tt_(tt), mm_(mm), ss_(ss)
+{
+	cout << "Kello: param. rak. " << this << endl;
+}
+
+Kello::~Kello()
+{
+	cout << "Kello: purkaja " << this << endl;
+}
+
 int Kello::annaTunnit()
 {
 	return tt_;
