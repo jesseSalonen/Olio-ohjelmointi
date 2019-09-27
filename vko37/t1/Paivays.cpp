@@ -54,3 +54,35 @@ void Paivays::tulosta()
 	cout << pp_ << "." << kk_ << "." << vv_ << endl;
 }
 
+int Paivays::montakoPaivaaKuukaudessa()
+{
+	if (kk_ == 2) {
+		if (vv_ % 4 != 0) return 28;
+		else if (vv_ % 100 != 0) return 29;
+		else if (vv_ % 400 != 0) return 28;
+		else return 29;
+	}
+	else if (kk_ == 4 || kk_ == 6 || kk_ == 9 || kk_ == 11)
+		return 30;
+	else
+		return 31;
+	
+}
+
+void Paivays::lisaaPaiva()
+{
+	if (pp_ == montakoPaivaaKuukaudessa()) {
+		if (kk_ == 12) {
+			vv_++;
+			kk_ = 1;
+			pp_ = 1;
+		}
+		else
+			kk_++;
+			pp_ = 1;
+	}
+	else
+		pp_++;
+}
+
+
