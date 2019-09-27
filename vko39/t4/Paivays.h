@@ -19,6 +19,7 @@ public:
 	void asetaVuosi(int vv);
 
 	void tulosta();
+	void kysyPaivays();
 
 private:
 	int pp_;

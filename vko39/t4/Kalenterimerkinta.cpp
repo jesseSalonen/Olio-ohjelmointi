@@ -2,7 +2,7 @@
 #include <iostream>
 
 using std::endl; using std::cout; using std::cin;
-Kalenterimerkinta::Kalenterimerkinta() :pvm_(), klo_(), asia_(), muistutus_(false)
+Kalenterimerkinta::Kalenterimerkinta():pvm_(), klo_(), asia_(), muistutus_(false)
 {
 }
 
@@ -70,7 +70,7 @@ void Kalenterimerkinta::tulosta()
 	klo_.tulostaAika();
 	cout << asia_ << endl;
 	if (muistutus_)
-		cout << "Muitutus paalla " << endl;
+		cout << "Muistutus paalla " << endl;
 	else
 		cout << "Ei muistutusta " << endl;
 	cout << "**********************" << endl;
@@ -78,9 +78,19 @@ void Kalenterimerkinta::tulosta()
 
 void Kalenterimerkinta::kysyTiedot()
 {
-	//kotiin
+	char muistutus;
+
+	pvm_.kysyPaivays();
+	klo_.kysyAika();
 	cout << "Anna asia: ";
 	getline(cin, asia_);
+	cout << "Asetetaanko muistutus?(k/e) ";
+	cin >> muistutus;
+	
+	if (muistutus == 'k')
+		muistutus_ = true;
+	else
+		muistutus_ = false;
 
-	//kotiin
+
 }

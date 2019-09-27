@@ -1,7 +1,7 @@
 #include "Paivays.h"
 #include <iostream>
 
-using std::endl; using std::cout;
+using std::endl; using std::cout; using std::cin;
 
 Paivays::Paivays(): pp_(1), kk_(1), vv_(1970)
 {
@@ -52,5 +52,16 @@ void Paivays::asetaVuosi(int vv)
 void Paivays::tulosta()
 {
 	cout << pp_ << "." << kk_ << "." << vv_ << endl;
+}
+
+void Paivays::kysyPaivays()
+{
+	cout << "Anna paiva, kuukausi ja vuosi." << endl;
+	cout << "Paiva: ";
+	cin >> pp_;
+	cout << "Kuukausi: ";
+	cin >> kk_;
+	cout << "Vuosi: ";
+	cin >> vv_;
 }
 
