@@ -4,11 +4,12 @@ using std::endl; using std::cout;
 
 int main() {
 
-	Paivays tanaan;
+	Paivays eilen;
 	Paivays huomenna(21, 9, 2019);
+	Paivays tanaan(huomenna);
 	
-	tanaan.tulosta();
 	huomenna.tulosta();
+	tanaan.tulosta();
 
 	return 0;
 }

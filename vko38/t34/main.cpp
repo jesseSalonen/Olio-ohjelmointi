@@ -3,7 +3,7 @@
 int main() {
 
 	Murtoluku ml1;
-	Murtoluku ml2(458,600);
+	Murtoluku ml2(45883647,6004943873);
 
 	ml1.tulosta();
 	ml1.kysyTiedot();
