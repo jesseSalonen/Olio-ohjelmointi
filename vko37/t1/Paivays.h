@@ -19,6 +19,8 @@ public:
 	void asetaVuosi(int vv);
 
 	void tulosta();
+	int montakoPaivaaKuukaudessa();
+	void lisaaPaiva();
 
 private:
 	int pp_;
