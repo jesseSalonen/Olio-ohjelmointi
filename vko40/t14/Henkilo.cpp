@@ -6,20 +6,24 @@ using std::cin; using std::cout; using std::endl;
 
 Henkilo::Henkilo(): etunimi_(), sukunimi_(), osoite_(), puhelinnumero_()
 {
+	cout << "Henkilon oletusrakentaja." << endl;
 }
 
 Henkilo::Henkilo(const string& etunimi, const string& sukunimi, const string& osoite, const string& puhelinnumero):
 	etunimi_(etunimi), sukunimi_(sukunimi), osoite_(osoite), puhelinnumero_(puhelinnumero)
 {
+	cout << "Henkilon param. rak." << endl;
 }
 
 Henkilo::Henkilo(const Henkilo& alkup): etunimi_(alkup.etunimi_), sukunimi_(alkup.sukunimi_), osoite_(alkup.osoite_),
 puhelinnumero_(alkup.puhelinnumero_)
 {
+	cout << "Henkilon kopio rak." << endl;
 }
 
 Henkilo::~Henkilo()
 {
+	cout << "Henkilon purkaja." << endl;
 }
 
 string Henkilo::annaEtunimi() const

@@ -6,24 +6,28 @@ using std::cin; using std::cout; using std::endl;
 
 Opiskelija::Opiskelija(): Henkilo(), opiskelijanumero_()
 {
+	cout << "Opiskelijan oletusrakentaja." << endl;
 }
 
 Opiskelija::Opiskelija(const string& etunimi, const string& sukunimi,
 	const string& osoite, const string& puhelinnumero, const string& opiskelijanumero):
 	Henkilo(etunimi, sukunimi, osoite, puhelinnumero), opiskelijanumero_(opiskelijanumero)
 {
+	cout << "Opiskelijan param. rak." << endl;
 }
 
 Opiskelija::Opiskelija(const Opiskelija& alkup): Henkilo(alkup),
 opiskelijanumero_(alkup.opiskelijanumero_)
 {
+	cout << "Opiskelijan kopio rak." << endl;
 }
 
 Opiskelija::~Opiskelija()
 {
+	cout << "Opiskelijan purkaja." << endl;
 }
 
-string Opiskelija::annaOpiskelijanumero()
+string Opiskelija::annaOpiskelijanumero() const
 {
 	return opiskelijanumero_;
 }

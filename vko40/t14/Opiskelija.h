@@ -9,7 +9,7 @@ public:
 	Opiskelija(const Opiskelija& alkup);
 	~Opiskelija();
 
-	string annaOpiskelijanumero();
+	string annaOpiskelijanumero() const;
 	void asetaOpiskelijanumero(const string& opiskelijanumero);
 
 	void tulosta() const;
