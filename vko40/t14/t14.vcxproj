@@ -123,6 +123,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Koulu.cpp" />
+    <ClCompile Include="Koulutusohjelma.cpp" />
     <ClCompile Include="Henkilo.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Opettaja.cpp" />
@@ -130,6 +132,8 @@
     <ClCompile Include="Tyontekija.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Koulu.h" />
+    <ClInclude Include="Koulutusohjelma.h" />
     <ClInclude Include="Henkilo.h" />
     <ClInclude Include="Opettaja.h" />
     <ClInclude Include="Opiskelija.h" />
