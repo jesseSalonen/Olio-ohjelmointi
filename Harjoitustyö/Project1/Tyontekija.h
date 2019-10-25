@@ -9,6 +9,8 @@ public:
 		const string& palkka, const string& tunnus);
 	Tyontekija(const Tyontekija& alkup);
 	~Tyontekija();
+	Tyontekija& operator=(const Tyontekija& tyont);
+
 	string annaPalkka() const;
 	string annaTunnus() const;
 	void asetaPalkka(const string& palkka);

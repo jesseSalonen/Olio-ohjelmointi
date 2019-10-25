@@ -27,6 +27,15 @@ Opiskelija::~Opiskelija()
 	cout << "Opiskelijan purkaja." << endl;
 }
 
+Opiskelija& Opiskelija::operator=(const Opiskelija& opisk)
+{
+	if (this != &opisk) {
+		Henkilo::operator= (opisk);
+		opiskelijanumero_ = opisk.opiskelijanumero_;
+	}
+	return *this;
+}
+
 string Opiskelija::annaOpiskelijanumero() const
 {
 	return opiskelijanumero_;

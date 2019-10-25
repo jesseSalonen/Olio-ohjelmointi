@@ -9,6 +9,8 @@ public:
 		const string& palkka, const string& tunnus, const string& opetusala);
 	Opettaja(const Opettaja& alkup);
 	~Opettaja();
+
+	Opettaja& operator=(const Opettaja& opet);
 	string annaOpetusala() const;
 	void asetaOpetusala(const string& opetusala);
 	void kysyTiedot();

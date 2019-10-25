@@ -24,6 +24,16 @@ Tyontekija::~Tyontekija()
 	cout << "Tyontekijan purkaja." << endl;
 }
 
+Tyontekija& Tyontekija::operator=(const Tyontekija& tyont)
+{
+	if (this != &tyont) {
+		Henkilo::operator=(tyont);
+		tunnus_ = tyont.tunnus_;
+		palkka_ = tyont.palkka_;
+	}
+	return *this;
+}
+
 string Tyontekija::annaPalkka() const
 {
 	return palkka_;

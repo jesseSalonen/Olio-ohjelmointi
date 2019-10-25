@@ -26,6 +26,19 @@ Henkilo::~Henkilo()
 	cout << "Henkilon purkaja." << endl;
 }
 
+Henkilo& Henkilo::operator=(const Henkilo& hlo)
+{
+	if (this != &hlo) {
+		etunimi_ = hlo.etunimi_;
+		sukunimi_ = hlo.sukunimi_;
+		osoite_ = hlo.osoite_;
+		puhelinnumero_ = hlo.puhelinnumero_;
+
+	}
+
+	return *this;
+}
+
 string Henkilo::annaEtunimi() const
 {
 	return etunimi_;

@@ -24,6 +24,15 @@ Opettaja::~Opettaja()
 	cout << "Opettajan purkaja." << endl;
 }
 
+Opettaja& Opettaja::operator=(const Opettaja& opet)
+{
+	if (this != &opet) {
+		Tyontekija::operator=(opet);
+		opetusala_ = opet.opetusala_;
+	}
+	return *this;
+}
+
 string Opettaja::annaOpetusala() const
 {
 	return opetusala_;

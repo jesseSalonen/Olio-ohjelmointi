@@ -11,6 +11,8 @@ public:
 	Henkilo(const Henkilo& alkup);
 	~Henkilo();
 
+	Henkilo& operator= (const Henkilo& hlo);
+
 	string annaEtunimi() const;
 	string annaSukunimi() const;
 	string annaOsoite() const;

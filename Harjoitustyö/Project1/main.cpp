@@ -3,19 +3,17 @@
 
 
 int main() {
-	Koulu TAMK("TAMK");
-	TAMK.lisaaKoulutusohjelma();
-	TAMK.tulostaKoulutusohjelmat();
-
-	TAMK.lisaaKoulutusohjelmaanOpettaja();
-	TAMK.lisaaKoulutusohjelmaanOpiskelija();
-	TAMK.lisaaKoulutusohjelmaanOpiskelija();
-
-	TAMK.tulostaKoulutusohjelmienMaara();
-	TAMK.tulostaKoulutusohjelmat();
-	TAMK.tulostaKoulutusohjelmanOpettajat();
-	TAMK.tulostaKoulutusohjelmanOpiskelijat();
+	Opettaja o1;
+	Opettaja o2("1", "2", "3", "4", "5", "6", "7");
 	
+	o1 = o2 = o1;
+	o1.tulosta();
+
+	Opiskelija op1;
+	Opiskelija op2("5", "4", "3", "2", "1");
+
+	op1 = op2;
+	op1.tulosta();
 	return 0;
 	
 }

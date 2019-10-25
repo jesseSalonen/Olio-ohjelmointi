@@ -9,6 +9,8 @@ public:
 	Opiskelija(const Opiskelija& alkup);
 	~Opiskelija();
 
+	Opiskelija& operator=(const Opiskelija& opisk);
+
 	string annaOpiskelijanumero() const;
 	void asetaOpiskelijanumero(const string& opiskelijanumero);
 
