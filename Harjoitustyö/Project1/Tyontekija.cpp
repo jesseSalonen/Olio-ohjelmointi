@@ -3,25 +3,21 @@
 
 using std::endl; using std::cin; using std::cout;
 Tyontekija::Tyontekija(): Henkilo(), palkka_(), tunnus_()
-{
-	cout << "Tyontekijan oletusrakentaja." << endl;
+{	
 }
 
 Tyontekija::Tyontekija(const string& etunimi, const string& sukunimi, const string& osoite, const string& puhelinnumero,
 	const string& palkka, const string& tunnus): Henkilo(etunimi, sukunimi, osoite, puhelinnumero), 
 	palkka_(palkka), tunnus_(tunnus)
 {
-	cout << "Tyontekijan param. rak." << endl;
 }
 
 Tyontekija::Tyontekija(const Tyontekija& alkup): Henkilo(alkup), palkka_(alkup.palkka_), tunnus_(alkup.tunnus_)
 {
-	cout << "Tyontekijan kopio rak." << endl;
 }
 
 Tyontekija::~Tyontekija()
 {
-	cout << "Tyontekijan purkaja." << endl;
 }
 
 Tyontekija& Tyontekija::operator=(const Tyontekija& tyont)
@@ -66,5 +62,5 @@ void Tyontekija::kysyTiedot()
 void Tyontekija::tulosta() const
 {
 	Henkilo::tulosta();
-	cout << palkka_ << " " << tunnus_ << endl;
+	cout << palkka_ << " " << tunnus_ << " ";
 }

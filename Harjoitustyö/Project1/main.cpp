@@ -6,7 +6,7 @@ int main() {
 	Opettaja o1;
 	Opettaja o2("1", "2", "3", "4", "5", "6", "7");
 	
-	o1 = o2 = o1;
+	o1 = o2;
 	o1.tulosta();
 
 	Opiskelija op1;
