@@ -25,6 +25,7 @@
     <ClCompile Include="main.cpp" />
     <ClCompile Include="Opettaja.cpp" />
     <ClCompile Include="Opiskelija.cpp" />
+    <ClCompile Include="Sovellus.cpp" />
     <ClCompile Include="Tyontekija.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -33,6 +34,7 @@
     <ClInclude Include="Koulutusohjelma.h" />
     <ClInclude Include="Opettaja.h" />
     <ClInclude Include="Opiskelija.h" />
+    <ClInclude Include="Sovellus.h" />
     <ClInclude Include="Tyontekija.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
