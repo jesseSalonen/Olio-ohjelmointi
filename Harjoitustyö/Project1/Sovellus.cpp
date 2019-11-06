@@ -50,6 +50,7 @@ void Sovellus::aja()
 			pause();
 		}
 		else if (valinta == "4") {
+			amk.tulostaKoulutusohjelmat();
 			amk.lisaaKoulutusohjelmaanOpettaja();
 			pause();
 		}
@@ -66,28 +67,36 @@ void Sovellus::aja()
 			pause();
 		}
 		else if (valinta == "8") {
-			
+			cout << "Ei valmis" << endl;
+			pause();
 		}
 		else if (valinta == "9") {
-
+			cout << "Ei valmis" << endl;
+			pause();
 		}
 		else if (valinta == "10") {
-
+			cout << "Ei valmis" << endl;
+			pause();
 		}
 		else if (valinta == "11") {
-
+			cout << "Ei valmis" << endl;
+			pause();
 		}
 		else if (valinta == "12") {
-
+			cout << "Ei valmis" << endl;
+			pause();
 		}
 		else if (valinta == "13") {
-
+			cout << "Ei valmis" << endl;
+			pause();
 		}
 		else if (valinta == "14") {
-
+			cout << "Ei valmis" << endl;
+			pause();
 		}
 		else if (valinta == "15") {
-
+			cout << "Ei valmis" << endl;
+			pause();
 		}
 		else if (valinta == "0") {
 			cout << "Nakemiin!" << endl;

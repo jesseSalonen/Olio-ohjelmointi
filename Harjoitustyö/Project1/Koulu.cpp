@@ -37,6 +37,7 @@ void Koulu::lisaaKoulutusohjelma()
 
 void Koulu::tulostaKoulutusohjelmat() const
 {
+	cout << "Koulutusohjelmat:" << endl;
 	for (unsigned int i = 0; i < koulutusohjelmat_.size(); i++) {
 
 		cout << koulutusohjelmat_[i].annaNimi() << endl;
