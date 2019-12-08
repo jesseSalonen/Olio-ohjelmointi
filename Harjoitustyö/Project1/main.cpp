@@ -3,8 +3,8 @@
 
 
 int main() {
-	Sovellus amk("TAMK");
-	amk.aja();
+	Sovellus korkeakoulu("TAMK");		//luodaan uusi Sovellus-olio, joka toimii käyttöympäristönä.
+	korkeakoulu.aja();
 
 	return 0;
 	

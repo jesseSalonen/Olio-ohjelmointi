@@ -1,9 +1,9 @@
 #include <iostream>
 #include "Sovellus.h"
 
-void pause();
+void pause();		//pys‰ytt‰‰ ohjelman ajon, jonka j‰lkeen k‰ytt‰j‰n jatkaessa tyhjennet‰‰n komentoikkuna.
 
-using std::cout; using std::cin; using std::endl;
+using std::cout; using std::cin; using std::endl; 
 Sovellus::Sovellus(): nimi_()
 {
 }
@@ -35,70 +35,69 @@ void Sovellus::aja()
 	string valinta;
 
 	do {
-		valinta = valikko();
+		valinta = valikko();		//tulostetaan valikko aina loopin alussa, ja otetaan k‰ytt‰j‰n syˆte "valintaan". 
 
-		if (valinta == "1") {
+		if (valinta == "1") {				//Lis‰‰ koulutusuohjelma
 			amk.lisaaKoulutusohjelma();
 			pause();
 		}
-		else if (valinta == "2") {
+		else if (valinta == "2") {			//Tulosta koulutusohjelmien nimet
 			amk.tulostaKoulutusohjelmat();
 			pause();
 		}
-		else if (valinta == "3") {
+		else if (valinta == "3") {			//Tulosta koulutusohjelmien m‰‰r‰
 			amk.tulostaKoulutusohjelmienMaara();
 			pause();
 		}
-		else if (valinta == "4") {
-			amk.tulostaKoulutusohjelmat();
+		else if (valinta == "4") {			// Lis‰‰ koulutusohjelmaan opettaja
 			amk.lisaaKoulutusohjelmaanOpettaja();
 			pause();
 		}
-		else if (valinta == "5") {
+		else if (valinta == "5") {			// Tulosta koulutusohjelman opettajat
 			amk.tulostaKoulutusohjelmanOpettajat();
 			pause();
 		}
-		else if (valinta == "6") {
+		else if (valinta == "6") {			//Lis‰‰ koulutusohjelmaan opiskelija
 			amk.lisaaKoulutusohjelmaanOpiskelija();
 			pause();
 		}
-		else if (valinta == "7") {
+		else if (valinta == "7") {			//Tulosta koulutusohjelman opiskelijat
 			amk.tulostaKoulutusohjelmanOpiskelijat();
 			pause();
 		}
-		else if (valinta == "8") {
-			cout << "Ei valmis" << endl;
+		else if (valinta == "8") {			//Poista koulutusohjelma
+			amk.poistaKoulutusohjelma();
 			pause();
 		}
-		else if (valinta == "9") {
-			cout << "Ei valmis" << endl;
+		else if (valinta == "9") {			//Poista opettaja
+			amk.poistaOpettaja();
 			pause();
 		}
-		else if (valinta == "10") {
-			cout << "Ei valmis" << endl;
+		else if (valinta == "10") {			//Poista opiskelija
+			amk.poistaOpiskelija();
 			pause();
 		}
-		else if (valinta == "11") {
-			cout << "Ei valmis" << endl;
+		else if (valinta == "11") {			//P‰ivit‰ koulutusohjelman nimi
+			amk.paivitaKoulutusohjelmanNimi();
 			pause();
 		}
-		else if (valinta == "12") {
-			cout << "Ei valmis" << endl;
+		else if (valinta == "12") {			//P‰ivit‰ opettajan tiedot
+			amk.paivitaOpettajanTiedot();
 			pause();
 		}
-		else if (valinta == "13") {
-			cout << "Ei valmis" << endl;
+		else if (valinta == "13") {			//P‰ivit‰ opiskelijan tiedot
+			amk.paivitaOpiskelijanTiedot();
 			pause();
 		}
-		else if (valinta == "14") {
-			cout << "Ei valmis" << endl;
+		else if (valinta == "14") {			//Lue tiedot
+			amk.lueTiedostosta();
 			pause();
 		}
-		else if (valinta == "15") {
-			cout << "Ei valmis" << endl;
+		else if (valinta == "15") {			//Tallenna tiedot
+			amk.kirjoitaTiedostoon();
 			pause();
 		}
-		else if (valinta == "0") {
+		else if (valinta == "0") {			//lopetus
 			cout << "Nakemiin!" << endl;
 		}
 		else {

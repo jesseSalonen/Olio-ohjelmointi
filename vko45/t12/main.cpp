@@ -12,7 +12,7 @@ int main() {
 	luvut.push_back(7);
 
 	try {
-		cout << luvut.at(-2) << endl;
+		cout << luvut.at(1) << endl;
 	}
 	catch (const std::out_of_range & e) {
 		cerr << "Virheellinen indeksointi! " << endl;

@@ -21,5 +21,4 @@ private:
 	string palkka_;
 	string tunnus_;
 };
-//stringinä palkka, muuta floatiksi.
 

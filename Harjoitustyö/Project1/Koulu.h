@@ -24,6 +24,16 @@ public:
 	void lisaaKoulutusohjelmaanOpiskelija();
 	void tulostaKoulutusohjelmanOpiskelijat() const;
 
+	void poistaKoulutusohjelma();
+	void poistaOpettaja();
+	void poistaOpiskelija();
+
+	void paivitaKoulutusohjelmanNimi();
+	void paivitaOpettajanTiedot();
+	void paivitaOpiskelijanTiedot();
+
+	void kirjoitaTiedostoon() const;
+	void lueTiedostosta();
 
 private:
 	string nimi_;
